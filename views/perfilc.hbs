@@ -1,0 +1,41 @@
+ <header>
+        <div class="container">
+            <a href="/" class="logo"><span>F</span>avaloro</a>
+            <nav class="nav">
+                <ul>
+                    <li><a href="https://www.who.int/es/health-topics/coronavirus#tab=tab_1">Situación mundial</a></li>
+                    <li><a href="https://www.mardelplata.gob.ar/salud/coronavirus">Post Covid</a></li>
+                    <li><a href='/hospital/reservart'>Turnos</a></li>
+                    <li><a href='/hospital/ayuda'>Ayuda</a></li>
+                    <li class="login"><a href='/hospital/perfilc'>Usuario<img width="25px" src="/images/person-circle.svg"></a></li>
+                </ul>
+            </nav>
+            <div class="fas fa-bars"></div>
+        </div>
+    </header>
+
+ <section class="turnos">
+        <div class="container">
+            <div class="tabla">
+        <table>
+            <thead>
+            <th class="colum-tittle f1">NOMBRE </th>
+            <th class="colum-tittle f2">DNI</th>
+            
+           
+        </thead>
+        </table>
+        </div>
+ <table>
+<tbody>
+{{#each paciente}}
+       <tr>
+    <td >{{nya_paciente}}</td>
+    <td >{{dni_paciente}}</td>
+</tr>
+
+{{/each}}
+</tbody>
+</table>
+ </div>
+ </section>

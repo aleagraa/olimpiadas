@@ -1,0 +1,55 @@
+ <header>
+        <div class="container">
+            <a href="/" class="logo"><span>F</span>avaloro</a>
+            <nav class="nav">
+                <ul>
+                    <li><a href="https://www.who.int/es/health-topics/coronavirus#tab=tab_1">Situación mundial</a></li>
+                    <li><a href="https://www.mardelplata.gob.ar/salud/coronavirus">Post Covid</a></li>
+                    <li><a href='/hospital/reservart'>Turnos</a></li>
+                    <li><a href='/hospital/ayuda'>Ayuda</a></li>
+                    <li class="login"><a href="">Usuario <img width="25px" src="/images/person-circle.svg"></a></li>
+                </ul>
+            </nav>
+            <div class="fas fa-bars"></div>
+        </div>
+    </header>
+    <section class="turnos">
+        <form action="/hospital/reservart" method="post">    
+        <div class="container">
+                <h1>Reserva de turnos</h1>             
+                    <div class="bloque">
+                    <label for="doctores">Especialidad</label>
+                    <select name="doctores" id="doctores">
+                        <option value="doctor1">seleccionar...</option>
+                         {{#each turnos}}
+                        <option name="especialidad_turno" >{{especialidad_turno}}</option>
+                   
+                     {{/each}}
+                      </select>
+                    </div>
+                    
+                    <div class="bloque">
+                    <label for="doctores">Doctor/a:</label>
+                    <select name="doctores" id="doctores">
+                        <option value="doctor1">seleccionar...</option>
+                        {{#each turnos}}
+                        <option name="medico_turno" >{{medico_turno}}</option>
+                
+                    {{/each}}
+                        </select> 
+                    </div>
+
+                    <div class="bloque">
+                    <label for="fecha">Fecha y horario:</label>
+                    <select name="fecha" id="fecha">
+                        <option value="doctor1">seleccionar...</option>
+                        {{#each turnos}}
+                        <option name="fecha_turnos" >{{fecha_turnos}}</option>
+                      {{/each}}
+                    </select>
+                    </div>
+
+                    <button type="submit"> Reservar </button>
+        </div>
+        </form>
+    </section>

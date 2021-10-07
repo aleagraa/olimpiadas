@@ -1,0 +1,33 @@
+<header>
+        <div class="container">
+            <a href="/" class="logo"><span>F</span>avaloro</a>
+            <nav class="nav">
+                <ul>
+                    <li><a href="https://www.who.int/es/health-topics/coronavirus#tab=tab_1">Situación mundial</a></li>
+                    <li><a href="https://www.mardelplata.gob.ar/salud/coronavirus">Post Covid</a></li>
+                    <li><a href='/hospital/ayuda'>Ayuda</a></li>
+                    <li><a class="login" href='/hospital/login'>iniciar sesión</a></li>
+                </ul>
+            </nav>
+            <div class="fas fa-bars"></div>
+        </div>
+    </header>
+    <section class="register">
+    <form action="/hospital/registrar" method="post">  
+        <img src="/images/register.svg">
+        <div class="formulario">
+            <h1>Registrarse</h1>
+            <div class="salto">
+            <input type="text" name="nya_paciente"  placeholder="Nombre completo" required>
+            <input type="text" name="dni_paciente" placeholder="DNI" required>
+            </div>
+            <div class="salto">
+            <input type="text" placeholder="Email" required>
+            <input type="password" placeholder="Contraseña" required>
+            </div>
+            <button type="submit"> Registrarse </button>
+            <h1 class="iniciar_sesion">¿Ya tienes una cuenta? <span><a href='/hospital/login'>Iniciar sesión</a></span></h1>
+        </div>
+        </form>
+    </section>
+      
